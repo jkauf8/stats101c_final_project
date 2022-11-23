@@ -144,9 +144,9 @@ X = vectorizer.fit_transform(documents).toarray()
 
 
 #------------------------------------Sentiment Lexicon------------------------------------------\
-f_n = open("C:\\D_Disk\\UCLA_101C\\Final_Project\\negative-words.txt", "r")
+f_n = open("C/Users/justinkaufman/Stats 101C/Final Project/negative_words.txt", "r")
 Negative_words = f_n.readlines()
-f_p = open("C:\\D_Disk\\UCLA_101C\\Final_Project\\positive-words.txt", "r")
+f_p = open("C/Users/justinkaufman/Stats 101C/Final Project/positive_words.txt", "r")
 Positive_words = f_p.readlines()
 Voca = [i.rstrip('\n') for i in Positive_words] + [i.rstrip('\n') for i in Negative_words]
 vectorizer = CountVectorizer(vocabulary=np.unique(Voca))
